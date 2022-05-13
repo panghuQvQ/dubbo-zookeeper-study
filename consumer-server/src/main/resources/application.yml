@@ -1,0 +1,10 @@
+server:
+  port: 8002
+
+dubbo:
+  # 消费者那服务需要暴露自己的名字
+  application:
+    name: consumer-server
+  #注册中心地址，可以在任何电脑上！ 录入其他设备IP即可
+  registry:
+    address: zookeeper://127.0.0.1:2181

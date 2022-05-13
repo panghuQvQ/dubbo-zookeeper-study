@@ -1,0 +1,14 @@
+server:
+  port: 8001
+
+
+dubbo:
+  # 服务应用的名字
+  application:
+    name: provider-server
+  # 注册中心地址
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  # 哪些服务要被注册
+  scan:
+    base-packages: com.wang.service
